@@ -7,7 +7,7 @@ import { fetchWithTimeout } from "@/core/fetch-with-timeout";
 import type { CuratedModelDefinition } from "@/core/types/app-state";
 
 export const ON_DEVICE_MODEL_CATALOG_URL =
-  "https://raw.githubusercontent.com/tecnicalbot/mobile-agent/refs/heads/main/catalog/on-device-models.json";
+  "https://raw.githubusercontent.com/stylesheet48-max/style-sheet-agent/refs/heads/main/catalog/on-device-models.json";
 
 const CATALOG_TTL_MS = 30 * 60 * 1000;
 const MAX_CATALOG_MODELS = 50;

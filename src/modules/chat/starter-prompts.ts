@@ -3,7 +3,7 @@ import bundledPrompts from "../../../catalog/chat-prompts.json";
 import { fetchWithTimeout } from "@/core/fetch-with-timeout";
 
 export const STARTER_PROMPTS_URL =
-  "https://raw.githubusercontent.com/tecnicalbot/mobile-agent/refs/heads/main/catalog/chat-prompts.json";
+  "https://raw.githubusercontent.com/stylesheet48-max/style-sheet-agent/refs/heads/main/catalog/chat-prompts.json";
 export const STARTER_PROMPTS_REFRESH_MS = 5 * 60 * 1000;
 export const MAX_STARTER_PROMPTS = 6;
 export const MAX_STARTER_PROMPT_LABEL_LENGTH = 60;

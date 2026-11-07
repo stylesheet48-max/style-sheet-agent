@@ -10,7 +10,7 @@ import type { CuratedModelDefinition } from "@/core/types/app-state";
  * rejects models we list too optimistically (for example `gpt-5.6-pro`).
  */
 export const CODEX_MODEL_CATALOG_URL =
-  "https://raw.githubusercontent.com/tecnicalbot/mobile-agent/refs/heads/main/catalog/openai-codex-models.json";
+  "https://raw.githubusercontent.com/stylesheet48-max/style-sheet-agent/refs/heads/main/catalog/openai-codex-models.json";
 
 const CATALOG_TTL_MS = 30 * 60 * 1000;
 const MAX_MODELS = 50;

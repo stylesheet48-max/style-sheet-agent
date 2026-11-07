@@ -3,7 +3,7 @@ import bundledTip from "../../../catalog/chat-tip.json";
 import { fetchWithTimeout } from "@/core/fetch-with-timeout";
 
 export const COMPOSER_TIP_URL =
-  "https://raw.githubusercontent.com/tecnicalbot/mobile-agent/refs/heads/main/catalog/chat-tip.json";
+  "https://raw.githubusercontent.com/stylesheet48-max/style-sheet-agent/refs/heads/main/catalog/chat-tip.json";
 export const COMPOSER_TIP_REFRESH_MS = 5 * 60 * 1000;
 export const MAX_COMPOSER_TIP_LENGTH = 180;
 

@@ -4,7 +4,7 @@ import { fetchWithTimeout } from "@/core/fetch-with-timeout";
 import type { McpServerAuthMode, McpServerTransport } from "@/core/types/app-state";
 
 export const MCP_CATALOG_URL =
-  "https://raw.githubusercontent.com/tecnicalbot/mobile-agent/refs/heads/main/catalog/mcp-servers.json";
+  "https://raw.githubusercontent.com/stylesheet48-max/style-sheet-agent/refs/heads/main/catalog/mcp-servers.json";
 
 const CATALOG_TTL_MS = 30 * 60 * 1000;
 const MAX_CATALOG_SERVERS = 100;
