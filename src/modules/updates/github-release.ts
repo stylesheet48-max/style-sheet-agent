@@ -2,7 +2,7 @@ import Constants from "expo-constants";
 import type { Directory } from "expo-file-system";
 
 const RELEASES_API_URL =
-  "https://api.github.com/repos/TecnicalBot/mobile-agent/releases";
+  "https://api.github.com/repos/stylesheet48-max/style-sheet-agent/releases";
 const RELEASE_CACHE_TTL_MS = 60 * 60 * 1000;
 
 export type AvailableRelease = {

@@ -14,7 +14,7 @@ responses keep the last in-memory tip, or the bundled default on a fresh launch.
   "enabled": true,
   "parts": [
     { "text": "Need help? " },
-    { "text": "Read the guide", "url": "https://github.com/TecnicalBot/mobile-agent#readme" }
+    { "text": "Read the guide", "url": "https://github.com/stylesheet48-max/style-sheet-agent#readme" }
   ]
 }
 ```

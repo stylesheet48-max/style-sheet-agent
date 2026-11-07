@@ -1,14 +1,11 @@
-# Mobile Agent
+# STYLE SHEET AGENT
 
-Mobile Agent is an open-source AI agent built specifically for mobile devices that runs entirely on your phone.
-
-## Demo
-
-[![Mobile Agent demo](https://img.youtube.com/vi/_P_SQ0MW-aU/maxresdefault.jpg)](https://youtu.be/_P_SQ0MW-aU?si=klxA4b7RU3Y2j5iy)
+STYLE SHEET AGENT is an open-source personal AI agent built specifically for mobile devices with a premium Glassmorphism visual interface that runs entirely on your phone.
 
 ## Features
 
-- Generate/Edit videos without any video generate model.
+- Complete Glassmorphism UI aesthetic (obsidian, translucent glass, vibrant cyan accents)
+- Generate/Edit videos without any video generate model
 - On-device models that can run completely offline
 - Runs completely on-device
 - No external server required
@@ -19,21 +16,17 @@ Mobile Agent is an open-source AI agent built specifically for mobile devices th
 - Direct access to phone's internal storage
 - Android permission-based access
 - Community plugins
-- Voice to text support.
+- Voice to text support
 
 ## Installation
 
-The application is distributed through GitHub Releases.
+The application is distributed through GitHub Releases and GitHub Actions artifacts.
 
-1. Download the latest APK from the Releases page.
+1. Download the latest APK from Releases or Actions Artifacts.
 2. Install the APK on your Android device.
 3. Grant the required permissions.
-4. Start using Mobile Agent.
-
-## Contributing
-
-Contributions are welcome. Feel free to open an issue for bug reports, feature requests, or submit a pull request if you'd like to contribute.
+4. Start using STYLE SHEET AGENT.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
