@@ -294,7 +294,7 @@ export function useVoiceInput({
         setStatus("idle");
         Alert.alert(
           "Microphone access needed",
-          "Enable microphone and speech recognition access for Mobile Agent in your device settings to use voice input.",
+          "Enable microphone and speech recognition access for STYLE SHEET AGENT in your device settings to use voice input.",
           [
             { style: "cancel", text: "Not now" },
             {

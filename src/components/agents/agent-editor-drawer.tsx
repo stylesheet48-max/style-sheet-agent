@@ -461,7 +461,7 @@ export function AgentEditorDrawer({
                 />
                 {!current.prompt.trim() ? (
                   <Text className="font-sans text-xs text-muted-foreground dark:text-muted-foreground-dark">
-                    Empty uses the default Mobile Agent system prompt.
+                    Empty uses the default STYLE SHEET AGENT system prompt.
                   </Text>
                 ) : null}
               </View>

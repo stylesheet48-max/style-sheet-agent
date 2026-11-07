@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Mobile Agent",
+    "name": "STYLE SHEET AGENT",
     "slug": "mobile-agent",
     "version": "2.1.8",
     "orientation": "portrait",
@@ -43,7 +43,7 @@
         "android.permission.RECEIVE_BOOT_COMPLETED"
       ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#070D1F",
         "foregroundImage": "./assets/images/icon.png",
         "backgroundImage": "./assets/images/icon.png",
         "monochromeImage": "./assets/images/icon.png"
@@ -85,7 +85,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#5996FF",
+          "backgroundColor": "#070D1F",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200
         }
@@ -95,7 +95,7 @@
         "expo-notifications",
         {
           "defaultChannel": "agent-runs",
-          "color": "#023c69",
+          "color": "#00D2FF",
           "icon": "./assets/images/notification-icon.png"
         }
       ],

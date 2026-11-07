@@ -1,5 +1,5 @@
 {
-  "name": "Mobile Agent",
+  "name": "STYLE SHEET AGENT",
   "description": "An AI agent that runs on your phone.",
   "main": "index.js",
   "version": "2.1.8",

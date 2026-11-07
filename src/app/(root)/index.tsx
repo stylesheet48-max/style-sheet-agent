@@ -2652,7 +2652,7 @@ const ChatInput = memo(function ChatInput({
                     }
                     accessibilityRole="button"
                     accessibilityState={{ expanded: composerActionsOpen }}
-                    className="h-9 w-9 items-center justify-center rounded-full bg-[#F0F0F3] dark:bg-secondary-dark"
+                    className="h-9 w-9 items-center justify-center rounded-full bg-secondary dark:bg-secondary-dark"
                     hitSlop={6}
                     onPress={() => {
                       KeyboardController.dismiss();
@@ -2671,7 +2671,7 @@ const ChatInput = memo(function ChatInput({
                   <Pressable
                     accessibilityLabel="Select agent"
                     accessibilityRole="button"
-                    className="flex-row items-center gap-1 rounded-full bg-[#F0F0F3] px-4 py-2 dark:bg-secondary-dark"
+                    className="flex-row items-center gap-1 rounded-full bg-secondary px-4 py-2 dark:bg-secondary-dark"
                     onPress={() => {
                       setAgentsDrawerOpen(true);
                     }}
@@ -2701,7 +2701,7 @@ const ChatInput = memo(function ChatInput({
                   <Pressable
                     accessibilityLabel="Start voice input"
                     accessibilityRole="button"
-                    className="h-12 w-12 items-center justify-center rounded-full bg-[#F0F0F3] dark:bg-secondary-dark"
+                    className="h-12 w-12 items-center justify-center rounded-full bg-secondary dark:bg-secondary-dark"
                     hitSlop={8}
                     onPress={() => {
                     KeyboardController.dismiss();

@@ -24,7 +24,7 @@ function connectionFailure(status?: { status: string; error?: string }) {
     );
   if (/400|parse error|invalid json|undefined is not a function/i.test(detail))
     return new PhoneToolsConnectionError(
-      "OpenCode reached the phone, but the MCP handshake failed. Reload Mobile Agent before reconnecting.",
+      "OpenCode reached the phone, but the MCP handshake failed. Reload STYLE SHEET AGENT before reconnecting.",
     );
   if (/ECONNRESET|socket.*closed/i.test(detail))
     return new PhoneToolsConnectionError(
@@ -32,7 +32,7 @@ function connectionFailure(status?: { status: string; error?: string }) {
     );
   if (/timeout|timed out|ECONNREFUSED|unreachable|fetch failed/i.test(detail))
     return new PhoneToolsConnectionError(
-      "OpenCode could not reach the phone MCP address. Check the selected network and keep Mobile Agent open.",
+      "OpenCode could not reach the phone MCP address. Check the selected network and keep STYLE SHEET AGENT open.",
     );
   return new PhoneToolsConnectionError(
     "OpenCode did not connect to the phone tools bridge. Check its MCP status in this chat's workspace.",

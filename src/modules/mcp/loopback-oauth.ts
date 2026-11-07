@@ -59,7 +59,7 @@ export async function openMcpLoopbackAuthorization(
             200,
             callbackPage(
               true,
-              "You can close this page and return to Mobile Agent.",
+              "You can close this page and return to STYLE SHEET AGENT.",
             ),
           );
         }

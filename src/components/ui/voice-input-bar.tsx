@@ -46,7 +46,7 @@ export function VoiceInputBar({
       <Pressable
         accessibilityLabel="Cancel voice input"
         accessibilityRole="button"
-        className="h-12 w-12 items-center justify-center rounded-full bg-[#F0F0F3] dark:bg-secondary-dark"
+        className="h-12 w-12 items-center justify-center rounded-full bg-secondary dark:bg-secondary-dark"
         hitSlop={8}
         onPress={onCancel}
         style={({ pressed }) => (pressed ? { opacity: 0.82 } : null)}

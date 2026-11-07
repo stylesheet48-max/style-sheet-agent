@@ -204,7 +204,7 @@ export function AppSidebar() {
             className="min-w-0 flex-1 font-sans text-2xl font-semibold text-foreground dark:text-foreground-dark"
             numberOfLines={1}
           >
-            Mobile Agent
+            STYLE SHEET AGENT
           </Text>
           <View className="flex-row items-center gap-sp-1">
             <SidebarClose asChild>

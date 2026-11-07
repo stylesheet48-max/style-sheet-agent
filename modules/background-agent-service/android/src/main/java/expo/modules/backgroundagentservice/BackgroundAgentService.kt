@@ -156,7 +156,7 @@ class BackgroundAgentService : Service() {
     }
     val contentText = when {
       phoneBridgeApproval -> "A harness is waiting for permission"
-      waitingForApproval -> detail ?: "Open Mobile Agent to respond"
+      waitingForApproval -> detail ?: "Open STYLE SHEET AGENT to respond"
       else -> detail ?: "Running in background"
     }
 

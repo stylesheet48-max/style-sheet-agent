@@ -1,7 +1,7 @@
 const { AndroidConfig, withAndroidManifest } = require("expo/config-plugins");
 
 /**
- * Registers Mobile Agent as an Android share target.
+ * Registers STYLE SHEET AGENT as an Android share target.
  *
  * Two filters are enough:
  *  - SEND          → one file, or text/links

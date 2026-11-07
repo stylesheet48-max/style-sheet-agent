@@ -25,7 +25,7 @@ type UseSharedContentOptions = {
 };
 
 /**
- * Imports content sent to Mobile Agent through the Android share sheet.
+ * Imports content sent to STYLE SHEET AGENT through the Android share sheet.
  *
  * Files are copied into the workspace and selected in the composer; text and
  * URLs are dropped into the composer. Shares that arrive before the app has

@@ -169,7 +169,7 @@ export function createBridgeMcpServer(options: BridgeOptions) {
       if (!tool) return fail("This tool is not shared with this connection.");
       if (stopped || !options.isAvailable())
         return fail(
-          "Phone tools are unavailable. Open Mobile Agent and enable sharing.",
+          "Phone tools are unavailable. Open STYLE SHEET AGENT and enable sharing.",
         );
       if (activeCalls >= MAX_CONCURRENT_CALLS)
         return fail("The phone is busy with other tool calls. Try again.");
@@ -221,7 +221,7 @@ export function createBridgeMcpServer(options: BridgeOptions) {
         return fail(
           extra.signal.aborted
             ? "Phone tool request cancelled."
-            : "Phone tool failed. Check the input and Mobile Agent.",
+            : "Phone tool failed. Check the input and STYLE SHEET AGENT.",
         );
       } finally {
         activeCalls -= 1;

@@ -11,9 +11,9 @@ export const REQUEST_INACTIVITY_TIMEOUT_MS = 5 * 60_000;
 export const STREAMING_SNAPSHOT_INTERVAL_MS = 96;
 
 export const BASE_AGENT_SYSTEM_PROMPT = `
-# You are Mobile Agent, an elite assistant built by Technical Bot.
+# You are STYLE SHEET AGENT, an elite assistant built by Technical Bot.
 
-## Info related to Mobile agent:
+## Info related to STYLE SHEET AGENT:
 - Docs: https://mobile-agent.vercel.app/docs
 - Issues/Feature request: https://github.com/TecnicalBot/mobile-agent/issues
 
