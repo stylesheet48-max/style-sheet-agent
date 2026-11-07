@@ -68,6 +68,7 @@ import {
 } from "quote-selection";
 
 import { ComposerTip } from "@/components/chat/composer-tip";
+import { SponsoredAdCard } from "@/components/ui/sponsored-ad-card";
 import { useStarterPrompts } from "@/modules/chat/use-starter-prompts";
 import { CodeBlock, CodeBlockContent } from "@/components/ui/code-block";
 import { Container } from "@/components/shared/container";
@@ -2759,6 +2760,7 @@ const ChatInput = memo(function ChatInput({
           </View>
         </View>
 
+        <SponsoredAdCard placement="chat_input" />
         <ComposerTip />
       </View>
 

@@ -41,9 +41,12 @@ import {
   Pin,
   PinOff,
   Settings2,
+  ShieldCheck,
   Trash2,
   Upload,
+  User,
   Users,
+  LayoutGrid,
 } from "lucide-react-native";
 import { useState, memo, useCallback, useMemo } from "react";
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
@@ -414,27 +417,152 @@ export function AppSidebar() {
           </SidebarGroup>
         </SidebarContent>
         <SidebarFooter className="pt-0">
-          <View className="border-t border-border pt-sp-2 dark:border-border-dark">
-            <SidebarClose asChild>
-              <SidebarMenuButton
-                className="!min-h-11 !py-sp-3"
-                isActive={settingsActive}
-                leftIcon={
+          <View className="border-t border-border pt-sp-2 pb-sp-1 dark:border-border-dark">
+            <View className="flex-row items-center justify-between gap-1 px-1">
+              {/* 1. Settings */}
+              <SidebarClose asChild>
+                <Pressable
+                  accessibilityLabel="Settings"
+                  accessibilityRole="button"
+                  className={cn(
+                    "flex-1 items-center justify-center py-2 px-1 rounded-xl transition min-h-[48px]",
+                    settingsActive
+                      ? "bg-primary/15 border border-primary/40 text-primary"
+                      : "bg-surface-elevated/40 border border-border/40"
+                  )}
+                  onPress={() => {
+                    if (pathname !== "/settings") {
+                      router.dismissTo("/");
+                      router.push("/settings");
+                    }
+                  }}
+                >
                   <Settings2
-                    color={settingsActive ? theme.background : theme.text}
-                    size={16}
+                    color={settingsActive ? theme.accent ?? "#38BDF8" : theme.text}
+                    size={18}
                   />
-                }
-                onPress={() => {
-                  if (pathname !== "/settings") {
-                    router.dismissTo("/");
-                    router.push("/settings");
-                  }
-                }}
-              >
-                Settings
-              </SidebarMenuButton>
-            </SidebarClose>
+                  <Text
+                    numberOfLines={1}
+                    className={cn(
+                      "font-sans text-[10px] mt-1 font-medium",
+                      settingsActive
+                        ? "text-primary font-bold"
+                        : "text-muted-foreground dark:text-muted-foreground-dark"
+                    )}
+                  >
+                    Settings
+                  </Text>
+                </Pressable>
+              </SidebarClose>
+
+              {/* 2. Profile */}
+              <SidebarClose asChild>
+                <Pressable
+                  accessibilityLabel="Profile"
+                  accessibilityRole="button"
+                  className={cn(
+                    "flex-1 items-center justify-center py-2 px-1 rounded-xl transition min-h-[48px]",
+                    pathname === "/profile"
+                      ? "bg-primary/15 border border-primary/40 text-primary"
+                      : "bg-surface-elevated/40 border border-border/40"
+                  )}
+                  onPress={() => {
+                    if (pathname !== "/profile") {
+                      router.dismissTo("/");
+                      router.push("/profile" as never);
+                    }
+                  }}
+                >
+                  <User
+                    color={pathname === "/profile" ? theme.accent ?? "#38BDF8" : theme.text}
+                    size={18}
+                  />
+                  <Text
+                    numberOfLines={1}
+                    className={cn(
+                      "font-sans text-[10px] mt-1 font-medium",
+                      pathname === "/profile"
+                        ? "text-primary font-bold"
+                        : "text-muted-foreground dark:text-muted-foreground-dark"
+                    )}
+                  >
+                    Profile
+                  </Text>
+                </Pressable>
+              </SidebarClose>
+
+              {/* 3. Plan & Version */}
+              <SidebarClose asChild>
+                <Pressable
+                  accessibilityLabel="Plan & Version"
+                  accessibilityRole="button"
+                  className={cn(
+                    "flex-1 items-center justify-center py-2 px-1 rounded-xl transition min-h-[48px]",
+                    pathname === "/plan"
+                      ? "bg-primary/15 border border-primary/40 text-primary"
+                      : "bg-surface-elevated/40 border border-border/40"
+                  )}
+                  onPress={() => {
+                    if (pathname !== "/plan") {
+                      router.dismissTo("/");
+                      router.push("/plan" as never);
+                    }
+                  }}
+                >
+                  <ShieldCheck
+                    color={pathname === "/plan" ? theme.accent ?? "#38BDF8" : theme.text}
+                    size={18}
+                  />
+                  <Text
+                    numberOfLines={1}
+                    className={cn(
+                      "font-sans text-[10px] mt-1 font-medium",
+                      pathname === "/plan"
+                        ? "text-primary font-bold"
+                        : "text-muted-foreground dark:text-muted-foreground-dark"
+                    )}
+                  >
+                    Plan
+                  </Text>
+                </Pressable>
+              </SidebarClose>
+
+              {/* 4. Templates */}
+              <SidebarClose asChild>
+                <Pressable
+                  accessibilityLabel="Templates"
+                  accessibilityRole="button"
+                  className={cn(
+                    "flex-1 items-center justify-center py-2 px-1 rounded-xl transition min-h-[48px]",
+                    pathname === "/templates"
+                      ? "bg-primary/15 border border-primary/40 text-primary"
+                      : "bg-surface-elevated/40 border border-border/40"
+                  )}
+                  onPress={() => {
+                    if (pathname !== "/templates") {
+                      router.dismissTo("/");
+                      router.push("/templates" as never);
+                    }
+                  }}
+                >
+                  <LayoutGrid
+                    color={pathname === "/templates" ? theme.accent ?? "#38BDF8" : theme.text}
+                    size={18}
+                  />
+                  <Text
+                    numberOfLines={1}
+                    className={cn(
+                      "font-sans text-[10px] mt-1 font-medium",
+                      pathname === "/templates"
+                        ? "text-primary font-bold"
+                        : "text-muted-foreground dark:text-muted-foreground-dark"
+                    )}
+                  >
+                    Templates
+                  </Text>
+                </Pressable>
+              </SidebarClose>
+            </View>
           </View>
         </SidebarFooter>
       </Sidebar>

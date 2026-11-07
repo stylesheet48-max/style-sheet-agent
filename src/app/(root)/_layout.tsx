@@ -24,6 +24,11 @@ export default function Layout() {
         <Stack.Screen name="library" />
         <Stack.Screen name="terminal" options={{ animation: "fade" }} />
         <Stack.Screen name="settings/index" />
+        <Stack.Screen name="profile" />
+        <Stack.Screen name="plan" />
+        <Stack.Screen name="templates" />
+        <Stack.Screen name="auth/login" />
+        <Stack.Screen name="auth/signup" />
       </Stack>
     </SidebarProvider>
   );

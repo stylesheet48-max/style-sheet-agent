@@ -50,10 +50,13 @@ $apiUrl = $protocol . $host . '/api/v1/update.php';
                     <p class="text-xs text-sky-400 font-medium">PHP Admin Command Center</p>
                 </div>
             </div>
-            <nav class="flex items-center space-x-6 text-sm">
+            <nav class="flex items-center space-x-5 text-sm">
                 <a href="index.php" class="text-sky-400 font-semibold border-b-2 border-sky-400 pb-1">Dashboard</a>
-                <a href="releases.php" class="text-slate-400 hover:text-white transition">Releases & APKs</a>
-                <a href="prompts.php" class="text-slate-400 hover:text-white transition">Prompts & Tips</a>
+                <a href="users.php" class="text-slate-400 hover:text-white transition">Users</a>
+                <a href="marketplace.php" class="text-slate-400 hover:text-white transition">Marketplace</a>
+                <a href="ads.php" class="text-slate-400 hover:text-white transition">Ads Manager</a>
+                <a href="releases.php" class="text-slate-400 hover:text-white transition">Releases</a>
+                <a href="prompts.php" class="text-slate-400 hover:text-white transition">Prompts</a>
                 <a href="devices.php" class="text-slate-400 hover:text-white transition">Devices</a>
                 <a href="logout.php" class="text-red-400 hover:text-red-300 font-medium transition">Logout</a>
             </nav>

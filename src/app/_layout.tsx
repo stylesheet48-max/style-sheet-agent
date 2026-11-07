@@ -12,6 +12,7 @@ import { MixCheckHost } from "@/components/ui/video-mix-host";
 import { VideoRenderHost } from "@/components/ui/video-render-host";
 import { migrateAppDatabase } from "@/core/db/database";
 import { AppStateProvider } from "@/providers/app-state";
+import { AuthProvider } from "@/providers/auth-state";
 import { HarnessProvider } from "@/providers/harness-state";
 import { PhoneBridgeProvider } from "@/providers/phone-bridge-state";
 import { UpdateProvider, useUpdate } from "@/providers/check-for-updates";
@@ -327,16 +328,18 @@ export default function MainLayout() {
                 <PhoneBridgeProvider>
                 <HarnessProvider>
                 <UpdateProvider>
-                  <SplashScreenController ready={fontsReady} />
-                  <NotificationObserver />
-                  <InAppNotificationBanner />
-                  <ReleaseUpdateNotice />
-                  <VideoRenderHost />
-                  <ScenePreviewHost />
-                  <MixCheckHost />
-                  <AudioAnalysisHost />
-                  <BrowserHost />
-                  <Slot />
+                  <AuthProvider>
+                    <SplashScreenController ready={fontsReady} />
+                    <NotificationObserver />
+                    <InAppNotificationBanner />
+                    <ReleaseUpdateNotice />
+                    <VideoRenderHost />
+                    <ScenePreviewHost />
+                    <MixCheckHost />
+                    <AudioAnalysisHost />
+                    <BrowserHost />
+                    <Slot />
+                  </AuthProvider>
                 </UpdateProvider>
                 </HarnessProvider>
                 </PhoneBridgeProvider>
