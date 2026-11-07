@@ -55,3 +55,7 @@ example
 # EAS local builds (kept on /home disk, not /tmp tmpfs)
 .eas-local/
 dist-eas/
+
+# Admin Panel SQLite DB
+admin-panel/database/*.sqlite
+admin-panel/uploads/apks/*.apk
